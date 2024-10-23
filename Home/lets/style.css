@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  font-family: Raleway, sans-serif;
+  box-sizing: border-box;
+}
+
+.s-1 {
+  background-color: black;
+  color: white;
+}
+
+.s-2 {
+  background-color: black;
+  color: white;
+}
+
+.s-3 {
+  background-color: #ffdfc3;
+}
+
+.s-4 {
+  background-color: #1b1c1d;
+}
+
+.menu {
+  color: white;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 16px 8px;
+}
+
+#myMenu {
+  font-family: Raleway, sans-serif;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 32px;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+#myMenu li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+#myMenu span {
+  max-width: 0%;
+  opacity: 0;
+  transition: all 1.2s;
+  transition-timing-function: cubic-bezier(0.23, 0.22, 0.09, 1);
+}
+#myMenu li:hover span {
+  max-width: 100%;
+  opacity: 1;
+  cursor: pointer;
+}
+
+li.active .nav-title {
+  max-width: 100% !important;
+  opacity: 1 !important;
+}
+
+.s-1 .container {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: 40px 40px 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.s-1 .container .hero-text {
+  overflow: hidden;
+}
+.s-1 .container .img {
+  overflow: hidden;
+}
+.s-1 .container .img img {
+  max-width: 300px;
+}
+.s-1 .container .line {
+  width: 1px;
+  background-color: #fff;
+  height: 35vh;
+}
+.s-1 .container .text {
+  text-align: center;
+  max-width: 600px;
+  padding: 0 0 0 2rem;
+  overflow: hidden;
+}
+.s-1 .container .text .headline {
+  font-size: 2.1rem;
+}
+.s-1 .container .text .sub-text {
+  margin-top: 16px;
+}
